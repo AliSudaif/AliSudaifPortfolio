@@ -1,0 +1,158 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif;
+}
+.pagelayout{
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    color : rgb(120, 120, 120) ;
+    
+  }
+
+  .pageleftside {
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    box-sizing: inherit;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin: 46px 0px;
+    margin-top: 0px;
+    width: 180px;
+    padding: 0px 0px;
+    background-color:rgb(57, 57, 57);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto; 
+    opacity: 0.8;
+   
+    
+  }
+
+  @media (max-width: 768px) {
+    .pageleftside {
+      display: none;
+    }
+  }
+
+  .pagerightside{
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    box-sizing: inherit;
+    margin-right: 0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding: 20px 40px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+  }
+
+
+
+
+
+.w3-row-padding img {
+    margin-bottom: 12px;
+}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+p {
+    color: white;
+    margin:10px;
+  
+}
+
+.white-input {
+    background-color: white; /* Sets the background color to white */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    padding-bottom: 200px; /* Adds some padding inside the box */
+    width: 300px; /* Sets a specific width for the box */
+    box-sizing: border-box; /* Ensures padding does not affect the overall width */
+    resize: none; /* Prevents resizing of the textarea */
+    overflow: hidden; /* Hides the scrollbar */
+    font-family: sans-serif; /* Adjusts the font to match typical input */
+    font-size: 16px; /* Adjusts the font size */
+    margin-left: 10px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    text-align: center;
+    
+
+  }
+
+  .reviews {
+    text-align: left;
+    margin-top: 10px; 
+    margin-bottom: 100px;
+    width :100%;
+  }
+
+  .fa fa-download {
+    padding:0px
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Apply the animation to your image */
+.w3-image {
+    animation: fadeIn 6s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .aboutme {
+    margin: 100px; /* Smaller screens get a smaller margin */
+  }
+}
+
+@keyframes circularFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0); /* Start from a scale of 0 */
+    border-radius: 50%; /* Makes the element circular */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1); /* Scale up to its normal size */
+    border-radius: 50%;
+  }
+}
